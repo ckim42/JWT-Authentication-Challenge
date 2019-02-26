@@ -27,7 +27,7 @@ app.use(
       }
       return null;
     }
-  }).unless({ path: ["/login", "/sign-up"]})
+  }).unless({ path: ["/login", "/sign-up"]}) // Don't need to be auth'd to go here
 );
 
 // controllers

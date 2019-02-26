@@ -18,6 +18,7 @@ UserSchema.pre("save", function(next) {
     this.createdAt = now;
   }
 
+  // encrypt password
   var user = this;
   if (!user.isModified("password")) {
     return next();
